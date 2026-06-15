@@ -155,37 +155,37 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Hero Entrance Animations
     const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
     
-    heroTl.to('.hero-image', {
+    heroTl.fromTo('.hero-image', { scale: 1 }, {
       scale: 1.05,
       duration: 2,
       ease: 'power2.out'
     }, 0);
 
-    heroTl.to('.hero-tagline', {
+    heroTl.fromTo('.hero-tagline', { opacity: 0, y: 20 }, {
       opacity: 1,
       y: 0,
       duration: 0.8
     }, 0.2);
 
-    heroTl.to('.hero-title', {
+    heroTl.fromTo('.hero-title', { opacity: 0, y: 30 }, {
       opacity: 1,
       y: 0,
       duration: 1
     }, 0.4);
 
-    heroTl.to('.hero-subtext', {
+    heroTl.fromTo('.hero-subtext', { opacity: 0, y: 20 }, {
       opacity: 1,
       y: 0,
       duration: 0.8
     }, 0.6);
 
-    heroTl.to('.hero-actions', {
+    heroTl.fromTo('.hero-actions', { opacity: 0, y: 20 }, {
       opacity: 1,
       y: 0,
       duration: 0.8
     }, 0.8);
 
-    heroTl.to('.hero-footer', {
+    heroTl.fromTo('.hero-footer', { opacity: 0, y: 20 }, {
       opacity: 1,
       y: 0,
       duration: 1

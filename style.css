@@ -256,6 +256,12 @@ p {
   display: none;
 }
 
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .menu-toggle {
   display: flex;
   flex-direction: column;
@@ -964,19 +970,17 @@ body.nav-open .nav-cta-mobile {
   color: var(--text-muted);
 }
 
-/* --- Entrance & Scroll Animations (GSAP Targets) --- */
+/* --- Entrance & Scroll Animations (GSAP Targets initialized dynamically in JS) --- */
 .animate-fade {
-  opacity: 0;
+  /* Initial states handled by GSAP fromTo */
 }
 
 .animate-slide {
-  opacity: 0;
-  transform: translateY(30px);
+  /* Initial states handled by GSAP fromTo */
 }
 
 .animate-on-scroll {
-  opacity: 0;
-  transform: translateY(30px);
+  /* Initial states handled by GSAP fromTo */
 }
 
 /* --- Media Queries (Tablet & Desktop) --- */
